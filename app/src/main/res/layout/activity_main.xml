@@ -2,89 +2,42 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<androidx.constraintlayout.widget.ConstraintLayout
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:orientation="vertical">
 
-    <TextView
+        <EditText
+            android:id="@+id/emtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="password" />
+        android:hint="@string/str"
+        android:inputType="textEmailAddress" />
 
-        android:id="@+id/textView2"
-        android:layout_width="77dp"
-        android:layout_height="18dp"
-        android:text="Register"
-        app:autoSizeTextType="uniform"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="56dp" />
+        <EditText
+            android:id="@+id/passw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberPassword" />
 
-    <EditText
-        android:id="@+id/edtName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Username"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="114dp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn" />
 
-    <EditText
-        android:id="@+id/edtEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="179dp" />
-
-    <EditText
-        android:id="@+id/edtPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Phone number"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="249dp" />
-
-    <EditText
-        android:id="@+id/edtPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Password"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="323dp" />
-
-    <EditText
-        android:id="@+id/edtRePassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Retry password"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="406dp" />
-
-    <Button
-        android:id="@+id/btnSubmit"
-        android:layout_width="269dp"
-        android:layout_height="49dp"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="555dp" />
-
-    <Button
-        android:id="@+id/btnCancel"
-        android:layout_width="264dp"
-        android:layout_height="48dp"
-        android:text="Cancle"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="615dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-    </layout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:marginTop="16dp"
+            android:marginBottom="16dp"
+            android:marginLeft="16dp"
+            android:marginRight="16dp"
+            android:text="@string/btn2" />
+    </LinearLayout>
+</layout>
